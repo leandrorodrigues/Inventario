@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  device_brand_id: 
+  device_type_id: 
+  rack_units: 
+  ethernet_interfaces: 
+
+two:
+  title: MyString
+  device_brand_id: 
+  device_type_id: 
+  rack_units: 
+  ethernet_interfaces: 

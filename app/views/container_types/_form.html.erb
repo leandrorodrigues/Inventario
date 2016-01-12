@@ -1,0 +1,13 @@
+<%= bootstrap_form_for @container_type, layout: :horizontal do |f| %>
+  <%= f.alert_message "Please fix the errors below." %>
+
+
+        <%= f.text_field :title %>
+        <%= f.text_field :slots %>
+        <%= f.text_field :nested %>
+
+  <%= f.form_group do %>
+      <%= f.submit :class => 'btn btn-primary'  %>
+  <% end %>
+
+<% end %>

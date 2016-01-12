@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  device_id: 
+  address: MyString
+  interface_type_id: 
+  mac: MyString
+
+two:
+  title: MyString
+  device_id: 
+  address: MyString
+  interface_type_id: 
+  mac: MyString

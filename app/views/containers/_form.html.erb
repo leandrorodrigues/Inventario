@@ -1,0 +1,30 @@
+<%= bootstrap_form_for @container, layout: :horizontal do |f| %>
+  <%= f.alert_message "Please fix the errors below." %>
+
+  <% if @container.persisted? %>
+    <%= f.static_control :container_type, :label => t('Type') do %>
+      <%= @container.container_type.title %>
+    <% end %>
+  <% else %>
+    <%= f.collection_select :container_type_id, ContainerType.all, :id, :title, :label => 'Type' %>
+  <% end %>
+
+  <%= f.text_field :title %>
+  <%= f.collection_select :place_id, Place.all, :id, :title %>
+  <%= f.fields_for :item do |item|  %>
+      <% if @container.persisted? %>
+          <%= f.static_control :item, :label => t('Number') do %>
+              <%= @container.item.number %>
+          <% end %>
+      <% else %>
+          <%= item.text_field :number %>
+      <% end %>
+  <% end %>
+
+
+  <%= f.form_group do %>
+    <%= f.submit :class => 'btn btn-primary'  %>
+  <% end %>
+
+<% end %>
+

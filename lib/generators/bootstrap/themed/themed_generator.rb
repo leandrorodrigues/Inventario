@@ -75,6 +75,22 @@ module Bootstrap
         options['excluded_columns']||[]
       end
 
+      def belongs_to_associations
+        @model_name.constantize.reflect_on_all_associations(:belongs_to)
+      end
+
+      def belongs_to_columns
+        belongs_to_associations.map {|a| a.foreign_key }
+      end
+
+      def belongs_to_model(column)
+        belongs_to_associations.select {|a| a.foreign_key == column}.first.name.to_s.camelize
+      end
+
+      def belongs_to?(column)
+        belongs_to_columns.include?(column)
+      end
+
       def excluded?(name)
         excluded_columns_names.include?(name) ||
         excluded_columns_pattern.any? {|p| name =~ p } ||

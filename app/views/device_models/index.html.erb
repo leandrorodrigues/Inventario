@@ -1,0 +1,47 @@
+<%- model_class = DeviceModel -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:device_brand_id) %></th>
+      <th><%= model_class.human_attribute_name(:device_type_id) %></th>
+      <th><%= model_class.human_attribute_name(:rack_units) %></th>
+      <th><%= model_class.human_attribute_name(:ethernet_interfaces) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @device_models.each do |device_model| %>
+      <tr>
+        <td><%= link_to device_model.id, device_model_path(device_model) %></td>
+        <td><%= device_model.title %></td>
+        <td><%= device_model.device_brand_id %></td>
+        <td><%= device_model.device_type_id %></td>
+        <td><%= device_model.rack_units %></td>
+        <td><%= device_model.ethernet_interfaces %></td>
+        <td>
+          <%= link_to icon(t('icon.edit')),
+                      edit_device_model_path(device_model),
+                      :class => 'btn btn-warning btn-xs',
+                      :title => t('.edit', :default => t("helpers.links.edit"))
+          %>
+          <%= link_to icon(t('icon.destroy')),
+                      device_model_path(device_model),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger',
+                      :title => t('.destroy', :default => t("helpers.links.destroy"))
+          %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_device_model_path,
+            :class => 'btn btn-primary' %>

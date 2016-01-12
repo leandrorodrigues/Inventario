@@ -1,0 +1,43 @@
+<%- model_class = ContainerType -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:slots) %></th>
+      <th><%= model_class.human_attribute_name(:nested) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @container_types.each do |container_type| %>
+      <tr>
+        <td><%= link_to container_type.id, container_type_path(container_type) %></td>
+        <td><%= container_type.title %></td>
+        <td><%= container_type.slots %></td>
+        <td><%= container_type.nested %></td>
+        <td>
+          <%= link_to icon(t('icon.edit')),
+                      edit_container_type_path(container_type),
+                      :class => 'btn btn-warning btn-xs',
+                      :title => t('.edit', :default => t("helpers.links.edit"))
+          %>
+          <%= link_to icon(t('icon.destroy')),
+                      container_type_path(container_type),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger',
+                      :title => t('.destroy', :default => t("helpers.links.destroy"))
+          %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_container_type_path,
+            :class => 'btn btn-primary' %>

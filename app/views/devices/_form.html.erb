@@ -1,0 +1,41 @@
+<%= bootstrap_form_for @device, layout: :horizontal do |f| %>
+  <%= f.alert_message "Please fix the errors below." %>
+
+  <%= f.text_field :title %>
+
+  <% if @device.persisted? %>
+      <%= f.static_control :device_model_id, :label => t('Model') do %>
+          <%= @device.device_model.title %>
+      <% end %>
+  <% else %>
+    <%= f.select :device_model_id, options_for_select(DeviceModel.all.map { |o| [o.title, o.id, 'data-number-slots' => o.rack_units]}, :selected => @device.device_model_id) %>
+  <% end %>
+
+  <%= f.fields_for :item do |item|  %>
+      <% if @device.persisted? %>
+          <%= f.static_control :item, :label => t('Item Number') do %>
+              <%= @device.item.number %>
+          <% end %>
+      <% else %>
+          <%= item.text_field :number %>
+      <% end %>
+  <% end %>
+
+  <%= f.fields_for :container_slot do |c|  %>
+    <% if @device.persisted? %>
+        <%= f.static_control :container_slot, :label => t('Slot') do %>
+            <%= @device.item.container_slots.first.container.title   %>
+            <%= @device.item.container_slots.first.title   %>
+        <% end %>
+    <% else %>
+      <%= c.collection_select :container_id, Container.all, :id, :title, :include_blank => t('Select one'), :selected => params[:device].try(:[], :container_slot).try(:[], :container_id)   %>
+      <%= c.collection_select :container_slot_id, [], :id, :title, {:include_blank => t('Select one'), :label => t('Slot') }, {'data-selected' => params[:device].try(:[], :container_slot).try(:[], :container_slot_id)}  %>
+    <% end %>
+  <% end %>
+
+
+  <%= f.form_group do %>
+      <%= f.submit :class => 'btn btn-primary'  %>
+  <% end %>
+
+<% end %>

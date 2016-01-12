@@ -21,3 +21,16 @@
 
 en:
   hello: "Hello world"
+
+  icon:
+    edit: "edit"
+    destroy: "trash"
+    brief: "eye"
+
+  helpers:
+    actions: ""
+    links:
+      edit: "Edit"
+      destroy: "Del"
+      new: "New"
+      brief: "Brief"

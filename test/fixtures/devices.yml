@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  item_id_id: 
+  device_model_id_id: 
+  container_slots_id: 
+
+two:
+  title: MyString
+  item_id_id: 
+  device_model_id_id: 
+  container_slots_id: 
