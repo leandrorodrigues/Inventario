@@ -33,6 +33,10 @@
     <% end %>
   <% end %>
 
+  <%= f.text_field :host %>
+  <%= f.text_field :ip, :label => 'IP Address' %>
+  <%= f.text_area :description %>
+
 
   <%= f.form_group do %>
       <%= f.submit :class => 'btn btn-primary'  %>

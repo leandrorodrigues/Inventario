@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160114183823) do
+ActiveRecord::Schema.define(version: 20160114194817) do
 
   create_table "connections", force: :cascade do |t|
     t.text    "subject",        limit: 65535
@@ -75,6 +75,9 @@ ActiveRecord::Schema.define(version: 20160114183823) do
     t.string  "title",           limit: 100, null: false
     t.integer "item_id",         limit: 4,   null: false
     t.integer "device_model_id", limit: 4,   null: false
+    t.string  "ip",              limit: 255
+    t.string  "host",            limit: 255
+    t.string  "description",     limit: 255
   end
 
   add_index "devices", ["device_model_id"], name: "fk_devices_device_models1_idx", using: :btree
