@@ -21,7 +21,7 @@ class ContainerSlot < ActiveRecord::Base
 
     slots.each.with_index do |slot, index|
       #testa se os enésimos slots estão disponíveis
-      @next_available = true;
+      @next_available = true
       (0..(number_slots - 1)).each do |n|
         if slots[index + n] == nil || #no caso de não existir próximos disponiveos
            slots[index + n].item != nil #slot ocupado
