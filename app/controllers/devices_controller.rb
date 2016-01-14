@@ -1,5 +1,5 @@
 class DevicesController < ApplicationController
-  before_action :set_device, only: [:show, :edit, :update, :destroy]
+  before_action :set_device, only: [:show, :edit, :update, :destroy, :discover_ip]
 
   # GET /devices
   # GET /devices.json
@@ -59,6 +59,21 @@ class DevicesController < ApplicationController
       format.html { redirect_to devices_url, notice: 'Device was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def discover_ip
+    require 'resolv'
+
+    begin
+      if @device.host
+        @ip = Resolv.getaddress @device.host
+      end
+
+      if @device.ip
+        @host = Resolv.getname @device.ip
+      end
+    end
+
   end
 
   private
