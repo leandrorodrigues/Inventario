@@ -9,8 +9,6 @@
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:device_brand_id) %></th>
       <th><%= model_class.human_attribute_name(:device_type_id) %></th>
-      <th><%= model_class.human_attribute_name(:rack_units) %></th>
-      <th><%= model_class.human_attribute_name(:ethernet_interfaces) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -19,10 +17,8 @@
       <tr>
         <td><%= link_to device_model.id, device_model_path(device_model) %></td>
         <td><%= device_model.title %></td>
-        <td><%= device_model.device_brand_id %></td>
-        <td><%= device_model.device_type_id %></td>
-        <td><%= device_model.rack_units %></td>
-        <td><%= device_model.ethernet_interfaces %></td>
+        <td><%= device_model.device_brand.try(:title) %></td>
+        <td><%= device_model.device_type.try(:title) %></td>
         <td>
           <%= link_to icon(t('icon.edit')),
                       edit_device_model_path(device_model),
