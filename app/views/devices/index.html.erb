@@ -20,6 +20,18 @@
         <td><%= device.item.number %></td>
         <td><%= device.device_model.title %></td>
         <td>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to t('.discover_ip', :default => t("helpers.links.discover_ip")), discover_ip_device_path(device)
+                %>
+              </li>
+            </ul>
+          </div>
+
           <%= link_to icon(t('icon.edit')),
                       edit_device_path(device),
                       :class => 'btn btn-warning btn-xs',

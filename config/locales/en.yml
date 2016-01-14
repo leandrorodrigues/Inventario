@@ -26,6 +26,7 @@ en:
     edit: "edit"
     destroy: "trash"
     brief: "eye"
+    discover: ""
 
   helpers:
     actions: ""
@@ -34,3 +35,4 @@ en:
       destroy: "Del"
       new: "New"
       brief: "Brief"
+      discover_ip: "Discover IP"

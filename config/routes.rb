@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :device_models
   resources :device_types
   resources :device_brands
-  resources :devices
+  resources :devices do
+    member {get 'discover_ip'}
+  end
   resources :containers do
     collection {get 'available_slots'}
     member {get 'brief'}
