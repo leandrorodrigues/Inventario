@@ -5,8 +5,9 @@
         <%= f.text_field :title %>
         <%= f.collection_select :device_brand_id, DeviceBrand.all, :id, :title %>
         <%= f.collection_select :device_type_id, DeviceType.all, :id, :title %>
-        <%= f.text_field :rack_units %>
-        <%= f.text_field :ethernet_interfaces %>
+        <%= f.number_field :rack_units %>
+        <%= f.number_field :ethernet_interfaces %>
+        <%= f.number_field :fiber_interfaces %>
 
   <%= f.form_group do %>
       <%= f.submit :class => 'btn btn-primary'  %>

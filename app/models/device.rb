@@ -25,8 +25,16 @@ class Device < ActiveRecord::Base
     @device.item.container_slots = picked_slots
 
     #cria as interfaces ethernet deste dispositivo
-    (1..@device.device_model.ethernet_interfaces).each  do |i|
-      @device.interfaces <<  Interface.new(:title => 'Ethernet Port ' + i.to_s, :interface_type_id => ETHERNET_INTERFACE)
+    if @device.device_model.ethernet_interfaces
+      (1..@device.device_model.ethernet_interfaces).each  do |i|
+        @device.interfaces <<  Interface.new(:title => 'Ethernet Port ' + i.to_s, :interface_type_id => ETHERNET_INTERFACE)
+      end
+    end
+
+    if @device.device_model.fiber_interfaces
+      (1..@device.device_model.fiber_interfaces).each  do |i|
+        @device.interfaces <<  Interface.new(:title => 'Fiber Port ' + i.to_s, :interface_type_id => FIBER_INTERFACE)
+      end
     end
 
     @device

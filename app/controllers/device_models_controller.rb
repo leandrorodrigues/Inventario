@@ -69,6 +69,6 @@ class DeviceModelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def device_model_params
-      params.require(:device_model).permit(:title, :device_brand_id, :device_type_id, :rack_units, :ethernet_interfaces)
+      params.require(:device_model).permit(:title, :device_brand_id, :device_type_id, :rack_units, :ethernet_interfaces, :fiber_interfaces)
     end
 end
