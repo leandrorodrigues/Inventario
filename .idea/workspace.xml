@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e0669dc-56b7-4960-aa95-e1fd93f01ff4" name="Default" comment="ip, host e descricao nos dispositivos">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/devices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/devices_controller.rb" />
-    </list>
-    <list id="35f2f7c0-736e-41fb-b8ad-3647ef882753" name="New changelist" comment="New changelist">
+    <list default="true" id="7e0669dc-56b7-4960-aa95-e1fd93f01ff4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/index.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/devices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/devices_controller.rb" />
     </list>
     <ignored path="inventario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +14,6 @@
     <ignored path="$PROJECT_DIR$/vendor/bundle/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -405,7 +399,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7e0669dc-56b7-4960-aa95-e1fd93f01ff4" name="Default" comment="" />
-      <changelist id="35f2f7c0-736e-41fb-b8ad-3647ef882753" name="New changelist" comment="" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1450200549541</created>
       <option name="number" value="Default" />
       <updated>1450200549541</updated>
@@ -452,7 +446,19 @@
       <option name="project" value="LOCAL" />
       <updated>1452802627880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New changelist">
+      <created>1452803864051</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1452803864051</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ip, host e descricao nos dispositivos">
+      <created>1452803915271</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1452803915271</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -495,6 +501,7 @@
     <MESSAGE value="arquivos da ide" />
     <MESSAGE value="inclue campo fiber interfaces no device model&#10;modifica o cadastro de devices para atuar com as interfaces fiber" />
     <MESSAGE value="trocar jquery para cdn" />
+    <MESSAGE value="New changelist" />
     <MESSAGE value="ip, host e descricao nos dispositivos" />
     <option name="LAST_COMMIT_MESSAGE" value="ip, host e descricao nos dispositivos" />
   </component>
