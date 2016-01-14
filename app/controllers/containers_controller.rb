@@ -72,6 +72,7 @@ class ContainersController < ApplicationController
   end
 
   def brief
+
   end
 
   private
@@ -82,7 +83,7 @@ class ContainersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def container_params
-      params.require(:container).permit(:title, :place_id, :item_id, :container_id, :container_type_id)
+      params.require(:container).permit(:title, :place_id, :item_id, :container_id, :container_type_id, :reverse)
     end
 
     def item_params

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160114180551) do
 
   create_table "connections", force: :cascade do |t|
     t.text    "subject",        limit: 65535
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 0) do
     t.integer "place_id",          limit: 4,   null: false
     t.integer "item_id",           limit: 4,   null: false
     t.integer "container_type_id", limit: 4,   null: false
+    t.boolean "reverse"
   end
 
   add_index "containers", ["container_type_id"], name: "fk_containers_container_types1_idx", using: :btree

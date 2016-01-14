@@ -18,7 +18,10 @@
   </thead>
   <%
       current_item = nil
-      @container.container_slots.each_with_index do |slot, i|
+
+      slots = !@container.reverse ? @container.container_slots : @container.container_slots.reverse
+
+      slots.each_with_index do |slot, i|
         #agrupar items iguais
         if slot.item != nil && slot.item != current_item
 

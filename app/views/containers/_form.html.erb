@@ -21,7 +21,9 @@
       <% end %>
   <% end %>
 
-
+  <%= f.form_group :reverse do %>
+    <%= f.check_box :reverse, label: t('Reverse Units Order') %>
+  <% end %>
   <%= f.form_group do %>
     <%= f.submit :class => 'btn btn-primary'  %>
   <% end %>
