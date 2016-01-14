@@ -25,17 +25,11 @@ ActiveRecord::Schema.define(version: 0) do
   create_table "container_slots", force: :cascade do |t|
     t.string  "title",        limit: 100
     t.integer "container_id", limit: 4,   null: false
+    t.integer "item_id",      limit: 4
   end
 
   add_index "container_slots", ["container_id"], name: "fk_container_slots_containers1_idx", using: :btree
-
-  create_table "container_slots_items", force: :cascade do |t|
-    t.integer "item_id",           limit: 4, null: false
-    t.integer "container_slot_id", limit: 4, null: false
-  end
-
-  add_index "container_slots_items", ["container_slot_id"], name: "fk_items_container_slots_container_slots1_idx", using: :btree
-  add_index "container_slots_items", ["item_id"], name: "fk_items_container_slots_items1_idx", using: :btree
+  add_index "container_slots", ["item_id"], name: "fk_container_slots_items1_idx", using: :btree
 
   create_table "container_types", force: :cascade do |t|
     t.string  "title",  limit: 100, null: false
@@ -115,8 +109,7 @@ ActiveRecord::Schema.define(version: 0) do
   add_foreign_key "connections", "interfaces", column: "interface0_id", name: "fk_connections_interfaces1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "connections", "interfaces", column: "interfaces1_id", name: "fk_connections_interfaces2", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "containers", name: "fk_container_slots_containers1", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "container_slots_items", "container_slots", name: "fk_items_container_slots_container_slots1", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "container_slots_items", "items", name: "fk_items_container_slots_items1", on_update: :cascade, on_delete: :cascade
+  add_foreign_key "container_slots", "items", name: "fk_container_slots_items1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "container_types", name: "fk_containers_container_types1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "items", name: "fk_containers_items1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "places", name: "fk_containers_places", on_update: :cascade, on_delete: :cascade
