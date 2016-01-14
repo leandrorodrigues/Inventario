@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e0669dc-56b7-4960-aa95-e1fd93f01ff4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/brief.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/brief.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" />
     </list>
     <ignored path="inventario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="brief.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/containers/brief.html.erb">
+      <file leaf-file-name="bootstrap.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41608876">
-              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.37586686">
+              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -79,13 +79,13 @@
         <option value="$PROJECT_DIR$/app/controllers/device_models_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/device.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devices/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/views/devices/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/devices_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/containers/brief.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" />
       </list>
     </option>
   </component>
@@ -179,7 +179,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,7 +497,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452803940179</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ajustar brief reverso do container">
+      <created>1452805855545</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1452805855545</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +549,8 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="ip, host e descricao nos dispositivos" />
     <MESSAGE value="ide" />
-    <option name="LAST_COMMIT_MESSAGE" value="ide" />
+    <MESSAGE value="ajustar brief reverso do container" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustar brief reverso do container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -832,14 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81276006">
-          <caret line="47" column="92" selection-start-line="47" selection-start-column="92" selection-end-line="47" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devices/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76976424">
@@ -932,8 +931,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/containers/brief.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41608876">
+        <state vertical-scroll-proportion="0.62413317">
           <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37586686">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding />
         </state>
       </provider>

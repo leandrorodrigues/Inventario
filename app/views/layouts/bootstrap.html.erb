@@ -24,11 +24,14 @@
         <%= drop_down 'Devices' do %>
           <%= menu_item "Devices", devices_path %>
           <%= menu_item "Models", device_models_path %>
+          <%= menu_item "Types", device_types_path %>
+          <%= menu_item "Brands", device_brands_path %>
         <% end %>
         <%= drop_down 'Containers' do %>
             <%= menu_item "Containers", containers_path %>
             <%= menu_item "Types", container_types_path %>
         <% end %>
+        <%= menu_item "Places", places_path %>
       <% end %>
     <% end %>
 
