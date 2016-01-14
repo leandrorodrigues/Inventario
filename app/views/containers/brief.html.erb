@@ -27,7 +27,11 @@
 
           #pegar os próximos items iguais
           if slot.item.device.device_model.rack_units > 1
-            title = " #{slot.title} to #{@container.container_slots[i - 1 + slot.item.device.device_model.rack_units].title}"
+            if @container.reverse
+              title = " #{slot.title} to #{@container.container_slots[slots.size - i - slot.item.device.device_model.rack_units].title}"
+           else
+             title = " #{slot.title} to #{@container.container_slots[i - 1 + slot.item.device.device_model.rack_units].title}"
+           end
           else
             title = slot.title
           end
