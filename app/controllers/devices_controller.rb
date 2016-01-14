@@ -69,7 +69,7 @@ class DevicesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def device_params
-      params.require(:device).permit(:title, :device_model_id, :container_slots_id)
+      params.require(:device).permit(:title, :device_model_id, :container_slots_id, :ip, :host, :description)
     end
 
     def item_params
@@ -77,7 +77,7 @@ class DevicesController < ApplicationController
     end
 
     def slot_params
-      params.require(:device).require(:container_slot).permit(:container_slot_id, :container_id, :ip, :host, :description)
+      params.require(:device).require(:container_slot).permit(:container_slot_id, :container_id)
     end
 
 end
