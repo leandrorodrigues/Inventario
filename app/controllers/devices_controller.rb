@@ -77,7 +77,7 @@ class DevicesController < ApplicationController
     end
 
     def slot_params
-      params.require(:device).require(:container_slot).permit(:container_slot_id, :container_id)
+      params.require(:device).require(:container_slot).permit(:container_slot_id, :container_id, :ip, :host, :description)
     end
 
 end
