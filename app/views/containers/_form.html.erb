@@ -11,14 +11,8 @@
 
   <%= f.text_field :title %>
   <%= f.collection_select :place_id, Place.all, :id, :title %>
-  <%= f.fields_for :item do |item|  %>
-      <% if @container.persisted? %>
-          <%= f.static_control :item, :label => t('Number') do %>
-              <%= @container.item.number %>
-          <% end %>
-      <% else %>
-          <%= item.text_field :number %>
-      <% end %>
+  <%= f.fields_for @container.item do |item|  %>
+      <%= item.text_field :number %>
   <% end %>
 
   <%= f.form_group :reverse do %>

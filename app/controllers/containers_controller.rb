@@ -15,6 +15,7 @@ class ContainersController < ApplicationController
   # GET /containers/new
   def new
     @container = Container.new
+    @container.item = Item.new
   end
 
   # GET /containers/1/edit
@@ -40,9 +41,8 @@ class ContainersController < ApplicationController
   # PATCH/PUT /containers/1
   # PATCH/PUT /containers/1.json
   def update
-    #todo: permitir que mude o número de tombo (item)
     respond_to do |format|
-      if @container.update(container_params)
+      if @container.update(container_params) && @container.item.update(item_params)
         format.html { redirect_to @container, notice: 'Container was successfully updated.' }
         format.json { render :show, status: :ok, location: @container }
       else
