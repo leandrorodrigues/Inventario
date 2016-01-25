@@ -15,6 +15,7 @@ class DevicesController < ApplicationController
   # GET /devices/new
   def new
     @device = Device.new
+    @device.item = Item.new
   end
 
   # GET /devices/1/edit
@@ -41,7 +42,7 @@ class DevicesController < ApplicationController
   # PATCH/PUT /devices/1.json
   def update
     respond_to do |format|
-      if @device.update(device_params)
+      if @device.update(device_params) && @device.item.update(item_params)
         format.html { redirect_to @device, notice: 'Device was successfully updated.' }
         format.json { render :show, status: :ok, location: @device }
       else
