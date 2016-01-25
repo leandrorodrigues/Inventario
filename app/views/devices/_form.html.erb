@@ -18,8 +18,10 @@
   <%= f.fields_for :container_slot do |c|  %>
     <% if @device.persisted? %>
         <%= f.static_control :container_slot, :label => t('Slot') do %>
-            <%= @device.item.container_slots.first.container.title   %>
-            <%= @device.item.container_slots.first.title   %>
+            <% if @device.item.container_slots.first != nil %>
+              <%= @device.item.container_slots.first.container.title   %>
+              <%= @device.item.container_slots.first.title   %>
+            <% end %>
         <% end %>
     <% else %>
       <%= c.collection_select :container_id, Container.all, :id, :title, :include_blank => t('Select one'), :selected => params[:device].try(:[], :container_slot).try(:[], :container_id)   %>
