@@ -1,0 +1,9 @@
+<div class="clearfix"></div>
+<br />
+<div class="well well-sm search-bar">
+  <%= bootstrap_form_tag method: :get do |f| %>
+      <%= f.text_field :q, hide_label: true, value: params[:q],
+                       append: f.button(t('Search') + ' ' + icon('search'), :class => 'btn btn-success')
+      %>
+  <% end %>
+</div>

@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
 
     sort + ' '  + direction
   end
+
+  def search_params
+    params[:q]
+  end
 end

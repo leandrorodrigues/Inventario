@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.order(sort_params).page(params[:page])
+    @items = Item.search(search_params).order(sort_params).page(params[:page])
   end
 
   # GET /items/1

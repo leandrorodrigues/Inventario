@@ -5,4 +5,8 @@ class Item < ActiveRecord::Base
 
   has_many :devices
   has_many :containers
+
+  def self.search(query)
+    where("number LIKE ?", "%#{query}%")
+  end
 end

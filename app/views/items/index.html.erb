@@ -7,6 +7,7 @@
             new_item_path,
             :class => 'btn btn-primary' %>
 </div>
+<%= render partial: 'shared/searchbar'%>
 
 <table class="table table-striped">
   <thead>
@@ -33,7 +34,7 @@
 
           <% item.devices.each do |device| %>
               <% if item.container_slots.first != nil %>
-                  <%= item.container_slots.first.container.place.title %>, 
+                  <%= item.container_slots.first.container.place.title %>,
                   <%= item.container_slots.first.container.title   %>
                   <%= item.container_slots.first.title   %>
               <% end %>
