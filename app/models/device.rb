@@ -2,6 +2,7 @@ class Device < ActiveRecord::Base
   belongs_to :device_model
   belongs_to :item
   has_many :interfaces
+  has_many :container_slots
 
   validates :title, presence: true
   validates_associated :item
@@ -30,7 +31,7 @@ class Device < ActiveRecord::Base
                                                    slot_params['container_slot_id'],
                                                    @device.device_model.rack_units
 
-    @device.item.container_slots = picked_slots
+    @device.container_slots = picked_slots
 
     #cria as interfaces ethernet deste dispositivo
     if @device.device_model.ethernet_interfaces

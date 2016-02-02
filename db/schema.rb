@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160202154949) do
+ActiveRecord::Schema.define(version: 20160202184339) do
 
   create_table "connections", force: :cascade do |t|
     t.text    "subject",        limit: 65535
@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(version: 20160202154949) do
   create_table "container_slots", force: :cascade do |t|
     t.string  "title",        limit: 100
     t.integer "container_id", limit: 4,   null: false
-    t.integer "item_id",      limit: 4
+    t.integer "device_id",    limit: 4
   end
 
   add_index "container_slots", ["container_id"], name: "fk_container_slots_containers1_idx", using: :btree
-  add_index "container_slots", ["item_id"], name: "fk_container_slots_items1_idx", using: :btree
+  add_index "container_slots", ["device_id"], name: "index_container_slots_on_device_id", using: :btree
 
   create_table "container_types", force: :cascade do |t|
     t.string  "title",  limit: 100, null: false
@@ -121,7 +121,7 @@ ActiveRecord::Schema.define(version: 20160202154949) do
   add_foreign_key "connections", "interfaces", column: "interface0_id", name: "fk_connections_interfaces1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "connections", "interfaces", column: "interfaces1_id", name: "fk_connections_interfaces2", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "containers", name: "fk_container_slots_containers1", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "container_slots", "items", name: "fk_container_slots_items1", on_update: :cascade, on_delete: :cascade
+  add_foreign_key "container_slots", "devices"
   add_foreign_key "containers", "container_types", name: "fk_containers_container_types1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "items", name: "fk_containers_items1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "places", name: "fk_containers_places", on_update: :cascade, on_delete: :cascade

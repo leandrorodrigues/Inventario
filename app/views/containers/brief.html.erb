@@ -3,8 +3,6 @@
   <h2><%= @container.title %></h2>
 </div>
 
-
-
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -17,20 +15,20 @@
     </tr>
   </thead>
   <%
-      current_item = nil
+      current_device = nil
 
       slots = !@container.reverse ? @container.container_slots : @container.container_slots.reverse
 
       slots.each_with_index do |slot, i|
         #agrupar items iguais
-        if slot.item != nil && slot.item != current_item
+        if slot.device != nil && slot.device != current_device
 
           #pegar os próximos items iguais
-          if slot.item.device.device_model.rack_units > 1
+          if slot.device.device_model.rack_units > 1
             if @container.reverse
-              title = " #{slot.title} to #{@container.container_slots[slots.size - i - slot.item.device.device_model.rack_units].title}"
+              title = " #{slot.title} to #{@container.container_slots[slots.size - i - slot.device.device_model.rack_units].title}"
            else
-             title = " #{slot.title} to #{@container.container_slots[i - 1 + slot.item.device.device_model.rack_units].title}"
+             title = " #{slot.title} to #{@container.container_slots[i - 1 + slot.device.device_model.rack_units].title}"
            end
           else
             title = slot.title
@@ -38,16 +36,16 @@
   %>
           <tr class="success">
             <th><%= title %></th>
-            <td><%= slot.item.device.device_model.device_type.title %></td>
-            <td><%= slot.item.device.device_model.title %></td>
-            <td><%= slot.item.device.title  %></td>
-            <td><%= slot.item.number  %></td>
-            <td><%= "#{slot.item.device.device_model.rack_units} Slots" %></td>
+            <td><%= slot.device.device_model.device_type.title %></td>
+            <td><%= slot.device.device_model.title %></td>
+            <td><%= slot.device.title  %></td>
+            <td><%= slot.device.item.number  %></td>
+            <td><%= "#{slot.device.device_model.rack_units} Slots" %></td>
           </tr>
   <%
-        #caso de ainda é do mesmo ítem
-        current_item = slot.item
-        elsif slot.item != nil
+        #caso de ainda é do mesmo dispositivo
+        current_device = slot.device
+        elsif slot.device != nil
           next
         #caso de slot vago
         else

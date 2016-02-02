@@ -18,9 +18,9 @@
   <%= f.fields_for :container_slot do |c|  %>
     <% if @device.persisted? %>
         <%= f.static_control :container_slot, :label => t('Slot') do %>
-            <% if @device.item.container_slots.first != nil %>
-              <%= @device.item.container_slots.first.container.title   %>
-              <%= @device.item.container_slots.first.title   %>
+            <% if @device.container_slots.first != nil %>
+              <%= @device.container_slots.first.container.title   %>
+              <%= @device.container_slots.first.title   %>
             <% end %>
         <% end %>
     <% else %>

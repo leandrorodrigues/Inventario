@@ -1,6 +1,6 @@
 class ContainerSlot < ActiveRecord::Base
   belongs_to :container
-  belongs_to :item
+  belongs_to :device
 
 
   #retorna os slots disponíveis de acordo com o container e o número de slots demandados
@@ -13,7 +13,7 @@ class ContainerSlot < ActiveRecord::Base
 
     slots = self
                 .where(:container_id => container_id)
-                .includes(:item)
+                .includes(:device)
 
     if slots.count < number_slots
       return []
@@ -24,7 +24,7 @@ class ContainerSlot < ActiveRecord::Base
       @next_available = true
       (0..(number_slots - 1)).each do |n|
         if slots[index + n] == nil || #no caso de não existir próximos disponiveos
-           slots[index + n].item != nil #slot ocupado
+           slots[index + n].device != nil #slot ocupado
           @next_available = false
           break
         end

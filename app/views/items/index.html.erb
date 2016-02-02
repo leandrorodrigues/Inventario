@@ -33,10 +33,10 @@
           <%= item.allocation %>
 
           <% item.devices.each do |device| %>
-              <% if item.container_slots.first != nil %>
-                  <%= item.container_slots.first.container.place.title %>,
-                  <%= item.container_slots.first.container.title   %>
-                  <%= item.container_slots.first.title   %>
+              <% if device.container_slots.first != nil %>
+                  <%= device.container_slots.first.container.place.title %>,
+                  <%= device.container_slots.first.container.title   %>
+                  <%= device.container_slots.first.title   %>
               <% end %>
           <% end %>
           <% item.containers.each do |container| %>
