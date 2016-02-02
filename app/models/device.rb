@@ -2,7 +2,7 @@ class Device < ActiveRecord::Base
   belongs_to :device_model
   belongs_to :item
   has_many :interfaces
-  has_many :container_slots
+  has_many :container_slots, autosave: true
 
   validates :title, presence: true
   validates_associated :item
