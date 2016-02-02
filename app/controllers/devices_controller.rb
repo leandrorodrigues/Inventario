@@ -4,7 +4,7 @@ class DevicesController < ApplicationController
   # GET /devices
   # GET /devices.json
   def index
-    @devices = Device.all
+    @devices = Device.search(search_params).order(sort_params).page(params[:page])
   end
 
   # GET /devices/1

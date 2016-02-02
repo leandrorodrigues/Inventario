@@ -6,6 +6,14 @@ class Device < ActiveRecord::Base
   validates :title, presence: true
   validates_associated :item
 
+  def self.search(query)
+    if(query != '')
+      where("title LIKE ?", "%#{query}%")
+    else
+      self
+    end
+  end
+
   #cria um dispositivo completo gerando as interfaces
   def self.build_complete(device_params, item_params, slot_params)
     @device = Device.new(device_params)

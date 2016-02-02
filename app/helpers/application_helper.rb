@@ -2,7 +2,10 @@ module ApplicationHelper
   def sortable(column, title = nil)
     title ||= column.titleize
 
-    direction = (column == params[:sort] && params[:direction] == "asc")? "desc" : "asc"
+    direction =  'asc'
+    if(column == params[:sort] && params[:direction] == "asc")
+      direction = 'desc'
+    end
 
     cls = "sortable"
     if column == params[:sort]

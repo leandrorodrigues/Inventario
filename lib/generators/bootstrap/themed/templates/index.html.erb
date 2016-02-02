@@ -12,9 +12,9 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%%= sortable :id, model_class.human_attribute_name(:id) %></th>
+      <th><%%= sortable 'id', model_class.human_attribute_name(:id) %></th>
       <%- columns.each do |column| -%>
-      <th><%%= sortable :<%= column.name %>, model_class.human_attribute_name(:<%= column.name %>) %></th>
+      <th><%%= sortable '<%= column.name %>', model_class.human_attribute_name(:<%= column.name %>) %></th>
       <%- end -%>
       <th><%%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>

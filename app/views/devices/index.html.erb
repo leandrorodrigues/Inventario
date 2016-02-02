@@ -2,11 +2,19 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+
+<div class="pull-right">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_device_path,
+            :class => 'btn btn-primary' %>
+</div>
+<%= render partial: 'shared/searchbar'%>
+
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= sortable 'id', model_class.human_attribute_name(:id) %></th>
+      <th><%= sortable 'title', model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:item_id) %></th>
       <th><%= model_class.human_attribute_name(:device_model_id) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -19,7 +27,7 @@
         <td><%= device.title %></td>
         <td><%= device.item.number %></td>
         <td><%= device.device_model.title %></td>
-        <td>
+        <td class="actions">
           <div class="btn-group">
             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Actions <span class="caret"></span>
@@ -50,6 +58,6 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_device_path,
-            :class => 'btn btn-primary' %>
+<div class="pull-right">
+  <%= paginate(@devices) %>
+</div>

@@ -7,6 +7,10 @@ class Item < ActiveRecord::Base
   has_many :containers
 
   def self.search(query)
-    where("number LIKE ?", "%#{query}%")
+    if(query != '')
+      where("number LIKE ?", "%#{query}%")
+    else
+      self
+    end
   end
 end
