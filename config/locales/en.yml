@@ -27,6 +27,8 @@ en:
     destroy: "trash"
     brief: "eye"
     discover: ""
+    device: "hdd-o"
+    container: "building"
 
   helpers:
     actions: ""
@@ -36,3 +38,5 @@ en:
       new: "New"
       brief: "Brief"
       discover_ip: "Discover IP"
+      device: "Show Device"
+      container: "Show Container"

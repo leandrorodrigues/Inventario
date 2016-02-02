@@ -3,6 +3,6 @@ class Item < ActiveRecord::Base
   validates :title, presence: true
   validates :number, presence: true, uniqueness: { message: 'This number exists in database. Insert another number.'}
 
-  has_one :device
-  has_one :container
+  has_many :devices
+  has_many :containers
 end

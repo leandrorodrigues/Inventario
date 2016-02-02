@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160201194831) do
+ActiveRecord::Schema.define(version: 20160202154949) do
 
   create_table "connections", force: :cascade do |t|
     t.text    "subject",        limit: 65535
@@ -101,14 +101,15 @@ ActiveRecord::Schema.define(version: 20160201194831) do
   add_index "interfaces", ["interface_type_id"], name: "fk_interfaces_interface_types1_idx", using: :btree
 
   create_table "items", force: :cascade do |t|
-    t.integer "number",            limit: 4,                  null: false
-    t.string  "title",             limit: 100,                null: false
+    t.integer "number",            limit: 4,                    null: false
+    t.string  "title",             limit: 100,                  null: false
     t.string  "brand_name",        limit: 255
     t.string  "model_description", limit: 255
     t.string  "serial_number",     limit: 255
     t.date    "warranty_date"
-    t.decimal "value",                         precision: 10
-    t.decimal "net_value",                     precision: 10
+    t.decimal "value",                           precision: 10
+    t.decimal "net_value",                       precision: 10
+    t.text    "allocation",        limit: 65535
   end
 
   add_index "items", ["number"], name: "number_UNIQUE", unique: true, using: :btree

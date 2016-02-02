@@ -20,6 +20,8 @@
   <dd><%= @item.value %></dd>
   <dt><strong><%= model_class.human_attribute_name(:net_value) %>:</strong></dt>
   <dd><%= @item.net_value %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:allocation) %>:</strong></dt>
+  <dd><%= @item.allocation %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

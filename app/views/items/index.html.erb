@@ -14,6 +14,7 @@
       <th><%= sortable 'id', model_class.human_attribute_name(:id) %></th>
       <th><%= sortable 'number', model_class.human_attribute_name(:number) %></th>
       <th><%= sortable 'title',  model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:allocation) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -22,8 +23,41 @@
       <tr>
         <td><%= link_to item.id, item_path(item) %></td>
         <td><%= item.number %></td>
-        <td><%= item.title %></td>
         <td>
+          <span data-toggle="tooltip" title="<%= item.title %>">
+            <%= truncate(item.title) %>
+          </span>
+        </td>
+        <td>
+          <%= item.allocation %>
+
+          <% item.devices.each do |device| %>
+              <% if item.container_slots.first != nil %>
+                  <%= item.container_slots.first.container.place.title %>, 
+                  <%= item.container_slots.first.container.title   %>
+                  <%= item.container_slots.first.title   %>
+              <% end %>
+          <% end %>
+          <% item.containers.each do |container| %>
+            <%= container.place.title %>
+          <% end %>
+        </td>
+        <td class="actions">
+          <% item.devices.each do |device| %>
+              <%= link_to icon(t('icon.device')),
+                          device_path(device),
+                          :class => 'btn btn-info btn-xs',
+                          :title => t('.device', :default => t("helpers.links.device"))
+          %>
+          <% end %>
+
+          <% item.containers.each do |container| %>
+              <%= link_to icon(t('icon.container')),
+                          container_path(container),
+                          :class => 'btn btn-info btn-xs',
+                          :title => t('.container', :default => t("helpers.links.container"))
+              %>
+          <% end %>
           <%= link_to icon(t('icon.edit')),
                       edit_item_path(item),
                       :class => 'btn btn-warning btn-xs',
