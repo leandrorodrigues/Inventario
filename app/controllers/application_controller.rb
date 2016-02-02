@@ -4,4 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   layout "bootstrap"
+
+
+  def sort_params
+    sort = params[:sort] || 'id'
+    direction = params[:direction] || 'asc'
+
+    sort + ' '  + direction
+  end
 end

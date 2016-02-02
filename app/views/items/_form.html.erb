@@ -1,0 +1,18 @@
+<%= bootstrap_form_for @item, layout: :horizontal do |f| %>
+  <%= f.alert_message "Please fix the errors below." %>
+
+
+        <%= f.text_field :number %>
+        <%= f.text_field :title %>
+        <%= f.text_field :brand_name %>
+        <%= f.text_field :model_description %>
+        <%= f.text_field :serial_number %>
+        <%= f.text_field :warranty_date %>
+        <%= f.text_field :value %>
+        <%= f.text_field :net_value %>
+
+  <%= f.form_group do %>
+      <%= f.submit :class => 'btn btn-primary'  %>
+  <% end %>
+
+<% end %>

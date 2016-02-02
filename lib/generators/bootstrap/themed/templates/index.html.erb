@@ -2,12 +2,19 @@
 <div class="page-header">
   <h1><%%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+
+<div class="pull-right">
+  <%%= link_to t('.new', :default => t("helpers.links.new")),
+    new_<%= singular_controller_routing_path %>_path,
+    :class => 'btn btn-primary' %>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%%= model_class.human_attribute_name(:id) %></th>
+      <th><%%= sortable :id, model_class.human_attribute_name(:id) %></th>
       <%- columns.each do |column| -%>
-      <th><%%= model_class.human_attribute_name(:<%= column.name %>) %></th>
+      <th><%%= sortable :<%= column.name %>, model_class.human_attribute_name(:<%= column.name %>) %></th>
       <%- end -%>
       <th><%%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -38,6 +45,7 @@
   </tbody>
 </table>
 
-<%%= link_to t('.new', :default => t("helpers.links.new")),
-            new_<%= singular_controller_routing_path %>_path,
-            :class => 'btn btn-primary' %>
+<div class="pull-right">
+  <%%= paginate(@<%= plural_resource_name %>) %>
+</div>
+

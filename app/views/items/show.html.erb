@@ -1,0 +1,33 @@
+<%- model_class = Item -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:number) %>:</strong></dt>
+  <dd><%= @item.number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
+  <dd><%= @item.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:brand_name) %>:</strong></dt>
+  <dd><%= @item.brand_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:model_description) %>:</strong></dt>
+  <dd><%= @item.model_description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:serial_number) %>:</strong></dt>
+  <dd><%= @item.serial_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:warranty_date) %>:</strong></dt>
+  <dd><%= @item.warranty_date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:value) %>:</strong></dt>
+  <dd><%= @item.value %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:net_value) %>:</strong></dt>
+  <dd><%= @item.net_value %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              items_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_item_path(@item), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              item_path(@item),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
