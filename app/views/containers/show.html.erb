@@ -7,9 +7,9 @@
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @container.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:place_id) %>:</strong></dt>
-  <dd><%= @container.place_id %></dd>
+  <dd><%= @container.place.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:item_id) %>:</strong></dt>
-  <dd><%= @container.item_id %></dd>
+  <dd><%= @container.item.number %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

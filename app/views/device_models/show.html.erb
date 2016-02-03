@@ -7,9 +7,9 @@
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @device_model.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:device_brand_id) %>:</strong></dt>
-  <dd><%= @device_model.device_brand_id %></dd>
+  <dd><%= @device_model.device_brand.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:device_type_id) %>:</strong></dt>
-  <dd><%= @device_model.device_type_id %></dd>
+  <dd><%= @device_model.device_type.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:rack_units) %>:</strong></dt>
   <dd><%= @device_model.rack_units %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ethernet_interfaces) %>:</strong></dt>
