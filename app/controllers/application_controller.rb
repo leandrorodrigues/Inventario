@@ -16,4 +16,10 @@ class ApplicationController < ActionController::Base
   def search_params
     params[:q]
   end
+
+
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
+  end
+
 end

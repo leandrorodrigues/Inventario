@@ -12,8 +12,14 @@ class Container < ActiveRecord::Base
     #container_type = ContainerType.find container_params[:container_type_id]
 
 
-    @item = Item.new(item_params)
-    @item.title = "Container Number #{@item.number}"
+    #@item = Item.new(item_params)
+    #@item.title = "Container Number #{@item.number}"
+
+    @item = Item.find_by_number(item_params[:number])
+    if !@item
+      @item = Item.new
+      @item.errors.add(:number, 'Item not found')
+    end
 
     @container.item = @item
 

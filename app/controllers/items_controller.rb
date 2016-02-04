@@ -61,6 +61,15 @@ class ItemsController < ApplicationController
     end
   end
 
+  def bynumber
+    @items = Item.find_by_number(params[:number]) or not_found
+
+    respond_to do |format|
+      format.json { render json: @items.to_json(:include => :devices)}
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item

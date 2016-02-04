@@ -10,9 +10,12 @@ Rails.application.routes.draw do
     collection {get 'available_slots'}
     member {get 'brief'}
   end
+
   resources :container_types
   resources :places
-  resources :items
+  resources :items do
+    collection {get 'bynumber'}
+  end
 
   root "items#index"
 

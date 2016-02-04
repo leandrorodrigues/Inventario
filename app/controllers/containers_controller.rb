@@ -42,7 +42,7 @@ class ContainersController < ApplicationController
   # PATCH/PUT /containers/1.json
   def update
     respond_to do |format|
-      if @container.update(container_params) && @container.item.update(item_params)
+      if @container.update(container_params)
         format.html { redirect_to @container, notice: 'Container was successfully updated.' }
         format.json { render :show, status: :ok, location: @container }
       else

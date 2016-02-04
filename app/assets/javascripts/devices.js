@@ -32,3 +32,29 @@ $(document).on('change', '#device_container_slot_container_id', function(){
 });
 
 $slot_container_combo.change();
+
+
+var $number_field = $("#device_item_number");
+var $number_field_addon = $number_field.next(".input-group-addon");
+
+$number_field.change(function(){
+    $.getJSON('/items/bynumber.json?number=' + $number_field.val()).success(function (data){
+        if(data.devices.length > 0) {
+            devices_name = data.devices.map(function(device){ return device.title }).join(', ');
+            if(confirm('There are devices (' + devices_name + ') linked to this item number, are you sure to use this number?')) {
+                $number_field_addon.html(data.title);
+            }
+            else {
+                $number_field.val('').focus();
+                $number_field_addon.html('');
+            }
+        } else {
+            $number_field_addon.html(data.title);
+        }
+    }).error(function(){
+        alert('Item not found. Please insert another number.');
+        $number_field.val('').focus();
+        $number_field_addon.html('');
+    });
+
+});

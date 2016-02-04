@@ -20,8 +20,14 @@ class Device < ActiveRecord::Base
     @device = Device.new(device_params)
 
     #cria item relacionado
-    @item = Item.new(item_params)
-    @item.title = "Device Number #{@item.number}"
+    #@item = Item.new(item_params)
+    #@item.title = "Device Number #{@item.number}"
+
+    @item = Item.find_by_number(item_params[:number])
+    if !@item
+      @item = Item.new
+      @item.errors.add(:number, 'Item not found')
+    end
 
     @device.item = @item
 

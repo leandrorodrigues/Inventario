@@ -12,7 +12,7 @@
   <% end %>
 
   <%= f.fields_for @device.item do |item|  %>
-    <%= item.text_field :number %>
+    <%= item.text_field :number, append: @device.item.title || ""   %>
   <% end %>
 
   <%= f.fields_for :container_slot do |c|  %>
