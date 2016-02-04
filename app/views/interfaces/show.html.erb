@@ -1,0 +1,27 @@
+<%- model_class = Interface -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
+  <dd><%= @interface.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:device_id) %>:</strong></dt>
+  <dd><%= @interface.device.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
+  <dd><%= @interface.address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:interface_type_id) %>:</strong></dt>
+  <dd><%= @interface.interface_type.title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mac) %>:</strong></dt>
+  <dd><%= @interface.mac %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              device_interfaces_path(@device), :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_device_interface_path(@device, @interface), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              device_interface_path(@device, @interface),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

@@ -29,6 +29,7 @@ en:
     discover: ""
     device: "hdd-o"
     container: "building"
+    interfaces: "sitemap"
 
   helpers:
     actions: ""
@@ -40,3 +41,4 @@ en:
       discover_ip: "Discover IP"
       device: "Show Device"
       container: "Show Container"
+      interfaces: "Interfaces"

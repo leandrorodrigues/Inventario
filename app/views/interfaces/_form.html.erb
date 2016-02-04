@@ -1,0 +1,17 @@
+<%= bootstrap_form_for [@device, @interface], layout: :horizontal do |f| %>
+  <%= f.alert_message "Please fix the errors below." %>
+
+
+        <%= f.text_field :title %>
+        <%= f.static_control :device_id do %>
+          <%= @device.title %>
+        <% end %>
+        <%= f.text_field :address %>
+        <%= f.collection_select :interface_type_id, InterfaceType.all, :id, :title %>
+        <%= f.text_field :mac %>
+
+  <%= f.form_group do %>
+      <%= f.submit :class => 'btn btn-primary'  %>
+  <% end %>
+
+<% end %>

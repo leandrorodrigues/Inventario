@@ -40,6 +40,12 @@
             </ul>
           </div>
 
+          <%= link_to icon(t('icon.interfaces')),
+                      device_interfaces_path(device),
+                      :class => 'btn btn-info btn-xs',
+                      :title => t('.edit', :default => t("helpers.links.interfaces"))
+          %>
+
           <%= link_to icon(t('icon.edit')),
                       edit_device_path(device),
                       :class => 'btn btn-warning btn-xs',

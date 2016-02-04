@@ -1,0 +1,53 @@
+<%- model_class = Interface -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+  <h2><%= @device.title %></h2>
+</div>
+
+<div class="pull-right">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              devices_path,
+              :class => 'btn btn-default' %>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+    new_device_interface_path,
+    :class => 'btn btn-primary' %>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= sortable 'id', model_class.human_attribute_name(:id) %></th>
+      <th><%= sortable 'title', model_class.human_attribute_name(:title) %></th>
+      <th><%= sortable 'address', model_class.human_attribute_name(:address) %></th>
+      <th><%= sortable 'interface_type_id', model_class.human_attribute_name(:interface_type_id) %></th>
+      <th><%= sortable 'mac', model_class.human_attribute_name(:mac) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @interfaces.each do |interface| %>
+      <tr>
+        <td><%= link_to interface.id, device_interface_path(@device, interface) %></td>
+        <td><%= interface.title %></td>
+        <td><%= interface.address %></td>
+        <td><%= interface.interface_type.title %></td>
+        <td><%= interface.mac %></td>
+        <td class="actions">
+          <%= link_to icon(t('icon.edit')),
+                      edit_device_interface_path(@device, interface),
+                      :class => 'btn btn-warning btn-xs',
+                      :title => t('.edit', :default => t("helpers.links.edit"))
+          %>
+          <%= link_to icon(t('icon.destroy')),
+                      device_interface_path(@device, interface),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger',
+                      :title => t('.destroy', :default => t("helpers.links.destroy"))
+          %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
