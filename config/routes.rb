@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   resources :device_brands
   resources :devices do
     member {get 'discover_ip'}
-    resources :interfaces
+    resources :interfaces do
+      resources :connections
+      collection {get 'available_interfaces'}
+    end
   end
   resources :containers do
     collection {get 'available_slots'}

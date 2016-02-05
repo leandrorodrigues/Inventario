@@ -63,6 +63,14 @@ class InterfacesController < ApplicationController
     end
   end
 
+  def available_interfaces
+    @interfaces = Interface.available(params[:interface0_id], params[:device_id])
+
+    respond_to do |format|
+      format.json { render json: @interfaces}
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_interface

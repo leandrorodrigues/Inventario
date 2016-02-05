@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interface0_id: 
+  interface1_id: 
+
+two:
+  interface0_id: 
+  interface1_id: 

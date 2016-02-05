@@ -30,6 +30,8 @@ en:
     device: "hdd-o"
     container: "building"
     interfaces: "sitemap"
+    connect: "plug"
+    disconnect: "plug"
 
   helpers:
     actions: ""
@@ -42,3 +44,5 @@ en:
       device: "Show Device"
       container: "Show Container"
       interfaces: "Interfaces"
+      connect: "Connect"
+      disconnect: "Disconnect"

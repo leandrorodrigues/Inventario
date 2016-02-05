@@ -1,0 +1,19 @@
+<%= bootstrap_form_for [@interface.device, @interface, @connection] do |f| %>
+    <%= f.alert_message "Please fix the errors below." %>
+
+    <%= f.hidden_field :interface0_id %>
+
+    <%= f.fields_for :end_interface do |i| %>
+        <%= i.collection_select :device_id, Device.all, :id, :title, :include_blank => t('Select one')    %>
+    <% end %>
+
+    <%= f.collection_select :interface1_id, [], :id, :title, :include_blank => t('Select one'), :label => t('Interface')   %>
+
+    <%= f.text_area :subject %>
+
+    <%= f.form_group do %>
+        <%= f.submit :class => 'btn btn-primary'  %>
+    <% end %>
+
+<% end %>
+

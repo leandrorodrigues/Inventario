@@ -21,6 +21,7 @@
       <th><%= sortable 'address', model_class.human_attribute_name(:address) %></th>
       <th><%= sortable 'interface_type_id', model_class.human_attribute_name(:interface_type_id) %></th>
       <th><%= sortable 'mac', model_class.human_attribute_name(:mac) %></th>
+      <th><%= t('Connections') %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -32,7 +33,30 @@
         <td><%= interface.address %></td>
         <td><%= interface.interface_type.title %></td>
         <td><%= interface.mac %></td>
+        <td>
+          <% interface.connections.each do |connection|  %>
+              <%= connection.subject %>
+              <%= connection.origin_interface.device.title %>: <%= connection.origin_interface.title %> to
+              <%= connection.end_interface.device.title %>: <%= connection.end_interface.title %>
+          <% end %>
+        </td>
         <td class="actions">
+          <% if interface.connections.empty? %>
+              <%= link_to t('Connect') + ' ' + icon( t('icon.connect')),
+                          new_device_interface_connection_path(@device, interface),
+                          :class => 'btn btn-success btn-xs',
+                          :title => t('.edit', :default => t("helpers.links.connect"))
+              %>
+          <% else %>
+              <%= link_to t('Disconnect') + ' ' + icon( t('icon.disconnect')),
+                          device_interface_connection_path(@device, interface, interface.connections.first),
+                          :method => :delete,
+                          :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                          :class => 'btn btn-danger btn-xs',
+                          :title => t('.disconnect', :default => t("helpers.links.disconnect"))
+              %>
+          <% end %>
+
           <%= link_to icon(t('icon.edit')),
                       edit_device_interface_path(@device, interface),
                       :class => 'btn btn-warning btn-xs',
