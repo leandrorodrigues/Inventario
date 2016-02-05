@@ -12,6 +12,6 @@ module ApplicationHelper
       cls = params[:direction]
     end
 
-    link_to title, {sort: column, direction: direction}, :class => cls
+    link_to title, params.merge({sort: column, direction: direction}), :class => cls
   end
 end
