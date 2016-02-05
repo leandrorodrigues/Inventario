@@ -7,12 +7,22 @@ class Device < ActiveRecord::Base
   validates :title, presence: true
   validates_associated :item
 
-  def self.search(query)
-    if(query != '')
-      where("title LIKE ?", "%#{query}%")
-    else
-      self
+  def self.search(params)
+    results = all
+
+    if !params[:q].blank?
+      results = results.where "devices.title LIKE ?", "%#{params[:q]}%"
     end
+
+    if !params[:container_id].blank?
+      results = results.includes(:container_slots).where(container_slots: {container_id: params[:container_id]})
+    end
+
+    if !params[:device_type_id].blank?
+      results = results.includes(:device_model).where(device_models: {device_type_id: params[:device_type_id]})
+    end
+
+    results
   end
 
   #cria um dispositivo completo gerando as interfaces

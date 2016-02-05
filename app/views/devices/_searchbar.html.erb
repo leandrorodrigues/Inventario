@@ -1,0 +1,12 @@
+<div class="clearfix"></div>
+<br />
+<div class="well well-sm search-bar">
+  <%= bootstrap_form_for '', layout: :inline, method: :get do |f| %>
+      <%= f.collection_select :container_id, Container.all, :id, :title, :include_blank => t('Show all'), selected: params[:container_id] %>
+      <%= f.collection_select :device_type_id, DeviceType.all, :id, :title, :include_blank => t('Show all'), selected: params[:device_type_id] %>
+
+      <%= f.text_field :q, hide_label: true, value: params[:q],
+                       append: f.button(t('Search') + ' ' + icon('search'), :class => 'btn btn-success')
+      %>
+  <% end %>
+</div>

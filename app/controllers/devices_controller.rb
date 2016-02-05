@@ -96,4 +96,8 @@ class DevicesController < ApplicationController
       params.require(:device).require(:container_slot).permit(:container_slot_id, :container_id)
     end
 
+    def search_params
+      params.permit(:container_id, :device_type_id, :q)
+    end
+
 end

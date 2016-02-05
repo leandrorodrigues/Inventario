@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
 
   def sort_params
-    sort = params[:sort] || 'id'
+    sort = params[:sort] || controller_name + '.id'
     direction = params[:direction] || 'asc'
 
     sort + ' '  + direction

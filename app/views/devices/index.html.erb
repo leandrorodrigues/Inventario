@@ -8,7 +8,7 @@
             new_device_path,
             :class => 'btn btn-primary' %>
 </div>
-<%= render partial: 'shared/searchbar'%>
+<%= render partial: 'searchbar'%>
 
 <table class="table table-striped">
   <thead>
@@ -17,6 +17,7 @@
       <th><%= sortable 'title', model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:item_id) %></th>
       <th><%= model_class.human_attribute_name(:device_model_id) %></th>
+      <th><%=t('Allocation')%></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -27,6 +28,12 @@
         <td><%= device.title %></td>
         <td><%= device.item.number %></td>
         <td><%= device.device_model.title %></td>
+        <td>
+          <% if !device.container_slots.empty? %>
+            <%= device.container_slots.first.container.title   %>
+            <%= device.container_slots.first.title   %>
+          <% end %>
+        </td>
         <td class="actions">
           <div class="btn-group">
             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
