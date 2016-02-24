@@ -3,6 +3,10 @@
 
   <%= f.text_field :title %>
 
+   <%= f.form_group :unknown do %>
+      <%= f.check_box :unknown, label: 'This is a unknown device' %>
+   <% end %>
+
   <% if @device.persisted? %>
       <%= f.static_control :device_model_id, :label => t('Model') do %>
           <%= @device.device_model.title %>
@@ -11,8 +15,10 @@
     <%= f.select :device_model_id, options_for_select(DeviceModel.all.map { |o| [o.title, o.id, 'data-number-slots' => o.rack_units]}, :selected => @device.device_model_id) %>
   <% end %>
 
-  <%= f.fields_for @device.item do |item|  %>
-    <%= item.text_field :number, append: @device.item.title || ""   %>
+  <% if !@device.unknown %>
+    <%= f.fields_for @device.item do |item|  %>
+      <%= item.text_field :number, append: @device.item.title || ""   %>
+    <% end %>
   <% end %>
 
   <%= f.fields_for :container_slot do |c|  %>

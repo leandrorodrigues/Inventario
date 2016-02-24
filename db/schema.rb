@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160202184339) do
+ActiveRecord::Schema.define(version: 20160224183028) do
 
   create_table "connections", force: :cascade do |t|
-    t.text    "subject",        limit: 65535
-    t.integer "interface0_id",  limit: 4,     null: false
-    t.integer "interfaces1_id", limit: 4,     null: false
+    t.text    "subject",       limit: 65535
+    t.integer "interface0_id", limit: 4,     null: false
+    t.integer "interface1_id", limit: 4,     null: false
   end
 
   add_index "connections", ["interface0_id"], name: "fk_connections_interfaces1_idx", using: :btree
-  add_index "connections", ["interfaces1_id"], name: "fk_connections_interfaces2_idx", using: :btree
+  add_index "connections", ["interface1_id"], name: "fk_connections_interfaces2_idx", using: :btree
 
   create_table "container_slots", force: :cascade do |t|
     t.string  "title",        limit: 100
@@ -72,12 +72,13 @@ ActiveRecord::Schema.define(version: 20160202184339) do
   add_index "device_types", ["title"], name: "title_UNIQUE", unique: true, using: :btree
 
   create_table "devices", force: :cascade do |t|
-    t.string  "title",           limit: 100, null: false
-    t.integer "item_id",         limit: 4,   null: false
-    t.integer "device_model_id", limit: 4,   null: false
+    t.string  "title",           limit: 100,                 null: false
+    t.integer "item_id",         limit: 4
+    t.integer "device_model_id", limit: 4,                   null: false
     t.string  "ip",              limit: 255
     t.string  "host",            limit: 255
     t.string  "description",     limit: 255
+    t.boolean "unknown",                     default: false, null: false
   end
 
   add_index "devices", ["device_model_id"], name: "fk_devices_device_models1_idx", using: :btree
@@ -119,7 +120,7 @@ ActiveRecord::Schema.define(version: 20160202184339) do
   end
 
   add_foreign_key "connections", "interfaces", column: "interface0_id", name: "fk_connections_interfaces1", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "connections", "interfaces", column: "interfaces1_id", name: "fk_connections_interfaces2", on_update: :cascade, on_delete: :cascade
+  add_foreign_key "connections", "interfaces", column: "interface1_id", name: "fk_connections_interfaces2", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "containers", name: "fk_container_slots_containers1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "devices"
   add_foreign_key "containers", "container_types", name: "fk_containers_container_types1", on_update: :cascade, on_delete: :cascade

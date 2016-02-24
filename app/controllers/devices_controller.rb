@@ -16,6 +16,8 @@ class DevicesController < ApplicationController
   def new
     @device = Device.new
     @device.item = Item.new
+
+
   end
 
   # GET /devices/1/edit
@@ -85,11 +87,11 @@ class DevicesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def device_params
-      params.require(:device).permit(:title, :device_model_id, :container_slots_id, :ip, :host, :description)
+      params.require(:device).permit(:title, :device_model_id, :container_slots_id, :ip, :host, :description, :unknown)
     end
 
     def item_params
-      params.require(:device).require(:item).permit(:number)
+      params[:device].has_key?(:item)? params.require(:device).require(:item).permit(:number) : nil
     end
 
     def slot_params

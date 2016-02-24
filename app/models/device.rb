@@ -5,7 +5,9 @@ class Device < ActiveRecord::Base
   has_many :container_slots, autosave: true
 
   validates :title, presence: true
+  validates :container_slots, presence: true, unless: :unknown?
   validates_associated :item
+
 
   def self.search(params)
     results = all
@@ -33,14 +35,15 @@ class Device < ActiveRecord::Base
     #@item = Item.new(item_params)
     #@item.title = "Device Number #{@item.number}"
 
-    @item = Item.find_by_number(item_params[:number])
-    if !@item
-      @item = Item.new
-      @item.errors.add(:number, 'Item not found')
+    if !@device.unknown
+      @item = Item.find_by_number(item_params[:number])
+      if !@item
+        @item = Item.new
+        @item.errors.add(:number, 'Item not found')
+      end
+
+      @device.item = @item
     end
-
-    @device.item = @item
-
 
     # cria a alocação deste dispositivo no rack(container)
     picked_slots = ContainerSlot.find_picked_slots slot_params['container_id'],

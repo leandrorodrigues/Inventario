@@ -25,8 +25,13 @@
     <% @devices.each do |device| %>
       <tr>
         <td><%= link_to device.id, device_path(device) %></td>
-        <td><%= device.title %></td>
-        <td><%= device.item.number %></td>
+        <td>
+          <%= device.title %>
+          <% if device.unknown %>
+            <span class="label label-warning">Unknown</span>
+          <% end %>
+        </td>
+        <td><%= device.item.try(:number) %></td>
         <td><%= device.device_model.title %></td>
         <td>
           <% if !device.container_slots.empty? %>
