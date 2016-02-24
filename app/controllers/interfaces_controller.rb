@@ -5,7 +5,7 @@ class InterfacesController < ApplicationController
   # GET /interfaces
   # GET /interfaces.json
   def index
-    @interfaces = Interface.where(:device_id => @device.id).order(sort_params).page(params[:page])
+    @interfaces = Interface.where(:device_id => @device.id).order(sort_params)
   end
 
   # GET /interfaces/1
