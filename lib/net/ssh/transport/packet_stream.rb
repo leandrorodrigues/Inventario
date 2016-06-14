@@ -86,7 +86,7 @@ module Net; module SSH; module Transport
       when :nonblock then
         if available_for_read?
           if fill <= 0
-            raise Net::SSH::Disconnect, "connection closed by remote host"
+            # raise Net::SSH::Disconnect, "connection closed by remote host"
           end
         end
         poll_next_packet
