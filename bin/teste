@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+spawn ssh sif@sju-sw-core.trt15.jus.br
+expect "assword:"
+send -- "m0Ns!ftrt\r"
+expect ">"
+send "display interface GigabitEthernet brief\r"
+expect { 
+ ">" { send "quit\r" }
+ -ex "More" { 
+     send " "
+     exp_continue;
+  }
+}
+interact

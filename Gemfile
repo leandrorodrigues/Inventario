@@ -47,7 +47,10 @@ gem 'kaminari'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'net-ssh-telnet'
+#gem 'net-ssh-telnet'
+
+gem 'snmp'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

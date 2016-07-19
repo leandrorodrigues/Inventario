@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails inventario: test" uuid="df290534-cdb3-4139-ab63-c889289599cf">
+      <user-name>inventario</user-name>
+      <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
+    </data-source>
+    <data-source name="Rails inventario: development" uuid="4e6b3652-3cef-4c1c-bf97-f017f2ddc679">
+      <user-name>inventario</user-name>
+      <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
+      <introspection-scope>inventario:*</introspection-scope>
+      <resolve-scope>inventario:*</resolve-scope>
+    </data-source>
+    <data-source name="Rails inventario: production" uuid="af817eaf-1fbe-441a-b72c-d2228b3e2400">
+      <user-name>inventario</user-name>
+      <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
+    </data-source>
+  </component>
+</project>
