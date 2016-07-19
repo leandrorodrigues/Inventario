@@ -13,6 +13,27 @@
 
 ActiveRecord::Schema.define(version: 20160224183028) do
 
+  create_table "cache_arp", force: :cascade do |t|
+    t.integer  "mac_address", limit: 8, null: false
+    t.integer  "ip_address",  limit: 4, null: false
+    t.datetime "created"
+  end
+
+  add_index "cache_arp", ["ip_address"], name: "ip_address_UNIQUE", unique: true, using: :btree
+  add_index "cache_arp", ["mac_address"], name: "mac_address_UNIQUE", unique: true, using: :btree
+
+  create_table "cache_ports", force: :cascade do |t|
+    t.string  "title",           limit: 100
+    t.integer "mac_address",     limit: 8
+    t.integer "cache_switch_id", limit: 4,   null: false
+  end
+
+  add_index "cache_ports", ["cache_switch_id"], name: "fk_cache_ports_cache_switches1_idx", using: :btree
+
+  create_table "cache_switches", force: :cascade do |t|
+    t.string "title", limit: 100
+  end
+
   create_table "connections", force: :cascade do |t|
     t.text    "subject",       limit: 65535
     t.integer "interface0_id", limit: 4,     null: false
@@ -40,11 +61,13 @@ ActiveRecord::Schema.define(version: 20160224183028) do
   create_table "containers", force: :cascade do |t|
     t.string  "title",             limit: 100
     t.integer "place_id",          limit: 4,   null: false
-    t.integer "item_id",           limit: 4,   null: false
+    t.integer "item_id",           limit: 4
     t.integer "container_type_id", limit: 4,   null: false
     t.boolean "reverse"
+    t.integer "container_id",      limit: 4
   end
 
+  add_index "containers", ["container_id"], name: "fk_containers_containers1_idx", using: :btree
   add_index "containers", ["container_type_id"], name: "fk_containers_container_types1_idx", using: :btree
   add_index "containers", ["item_id"], name: "fk_containers_items1_idx", using: :btree
   add_index "containers", ["place_id"], name: "fk_containers_places_idx", using: :btree
@@ -157,11 +180,13 @@ ActiveRecord::Schema.define(version: 20160224183028) do
   add_index "stock_param_values", ["device_model_param_id"], name: "fk_stock_param_value_device_model_param1_idx", using: :btree
   add_index "stock_param_values", ["stock_item_id"], name: "fk_stock_param_value_stock_item1_idx", using: :btree
 
+  add_foreign_key "cache_ports", "cache_switches", name: "fk_cache_ports_cache_switches1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "connections", "interfaces", column: "interface0_id", name: "fk_connections_interfaces1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "connections", "interfaces", column: "interface1_id", name: "fk_connections_interfaces2", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "containers", name: "fk_container_slots_containers1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "container_slots", "devices"
   add_foreign_key "containers", "container_types", name: "fk_containers_container_types1", on_update: :cascade, on_delete: :cascade
+  add_foreign_key "containers", "containers", name: "fk_containers_containers1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "items", name: "fk_containers_items1", on_update: :cascade, on_delete: :cascade
   add_foreign_key "containers", "places", name: "fk_containers_places", on_update: :cascade, on_delete: :cascade
   add_foreign_key "device_model_params", "device_models", name: "fk_device_model_params_device_models1", on_update: :cascade, on_delete: :cascade
