@@ -1,0 +1,643 @@
+<dataSource name="Rails inventario: development">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="inventario">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema" />
+    <schema id="3" name="inventario_production" />
+    <table id="4" parent="1" name="connections" />
+    <table id="5" parent="1" name="container_slots" />
+    <table id="6" parent="1" name="container_types" />
+    <table id="7" parent="1" name="containers" />
+    <table id="8" parent="1" name="device_brands" />
+    <table id="9" parent="1" name="device_model_params" />
+    <table id="10" parent="1" name="device_models" />
+    <table id="11" parent="1" name="device_types" />
+    <table id="12" parent="1" name="devices" />
+    <table id="13" parent="1" name="interface_types" />
+    <table id="14" parent="1" name="interfaces" />
+    <table id="15" parent="1" name="items" />
+    <table id="16" parent="1" name="params" />
+    <table id="17" parent="1" name="places" />
+    <table id="18" parent="1" name="schema_migrations" />
+    <table id="19" parent="1" name="stock_items" />
+    <table id="20" parent="1" name="stock_param_values" />
+    <routine id="21" parent="1" name="insertInterfacesSwitchModule">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <column id="22" parent="4" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="23" parent="4" name="subject">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="24" parent="4" name="interface0_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="25" parent="4" name="interface1_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="26" parent="4" name="fk_connections_interfaces1_idx">
+      <columns>interface0_id</columns>
+      <desc-columns />
+    </index>
+    <index id="27" parent="4" name="fk_connections_interfaces2_idx">
+      <columns>interface1_id</columns>
+      <desc-columns />
+    </index>
+    <key id="28" parent="4" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="29" parent="4" name="fk_connections_interfaces1">
+      <columns>interface0_id</columns>
+      <ref-key>~.interfaces.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="30" parent="4" name="fk_connections_interfaces2">
+      <columns>interface1_id</columns>
+      <ref-key>~.interfaces.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="31" parent="5" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="32" parent="5" name="title">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="33" parent="5" name="container_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="5" name="device_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="35" parent="5" name="fk_container_slots_containers1_idx">
+      <columns>container_id</columns>
+      <desc-columns />
+    </index>
+    <index id="36" parent="5" name="index_container_slots_on_device_id">
+      <columns>device_id</columns>
+      <desc-columns />
+    </index>
+    <key id="37" parent="5" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="38" parent="5" name="fk_container_slots_containers1">
+      <columns>container_id</columns>
+      <ref-key>~.containers.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="39" parent="5" name="fk_rails_c850d94087">
+      <columns>device_id</columns>
+      <ref-key>~.devices.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="40" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="41" parent="6" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="42" parent="6" name="slots">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="43" parent="6" name="nested">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="44" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="45" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="46" parent="7" name="title">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="47" parent="7" name="place_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="48" parent="7" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="49" parent="7" name="container_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="50" parent="7" name="reverse">
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <index id="51" parent="7" name="fk_containers_container_types1_idx">
+      <columns>container_type_id</columns>
+      <desc-columns />
+    </index>
+    <index id="52" parent="7" name="fk_containers_items1_idx">
+      <columns>item_id</columns>
+      <desc-columns />
+    </index>
+    <index id="53" parent="7" name="fk_containers_places_idx">
+      <columns>place_id</columns>
+      <desc-columns />
+    </index>
+    <key id="54" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="55" parent="7" name="fk_containers_places">
+      <columns>place_id</columns>
+      <ref-key>~.places.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="56" parent="7" name="fk_containers_items1">
+      <columns>item_id</columns>
+      <ref-key>~.items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="57" parent="7" name="fk_containers_container_types1">
+      <columns>container_type_id</columns>
+      <ref-key>~.container_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="58" parent="8" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="59" parent="8" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="60" parent="8" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="61" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="62" parent="9" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="63" parent="9" name="device_model_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="64" parent="9" name="param_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="65" parent="9" name="fk_device_model_params_device_models1_idx">
+      <columns>device_model_id</columns>
+      <desc-columns />
+    </index>
+    <index id="66" parent="9" name="fk_device_model_params_params1_idx">
+      <columns>param_id</columns>
+      <desc-columns />
+    </index>
+    <key id="67" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="68" parent="9" name="fk_device_model_params_device_models1">
+      <columns>device_model_id</columns>
+      <ref-key>~.device_models.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="69" parent="9" name="fk_device_model_params_params1">
+      <columns>param_id</columns>
+      <ref-key>~.params.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="70" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="71" parent="10" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="72" parent="10" name="device_brand_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="73" parent="10" name="device_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="74" parent="10" name="rack_units">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="75" parent="10" name="ethernet_interfaces">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="76" parent="10" name="fiber_interfaces">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="77" parent="10" name="stock_unit">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="78" parent="10" name="fk_device_models_device_brands1_idx">
+      <columns>device_brand_id</columns>
+      <desc-columns />
+    </index>
+    <index id="79" parent="10" name="fk_device_models_device_types1_idx">
+      <columns>device_type_id</columns>
+      <desc-columns />
+    </index>
+    <key id="80" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="81" parent="10" name="fk_device_models_device_brands1">
+      <columns>device_brand_id</columns>
+      <ref-key>~.device_brands.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="82" parent="10" name="fk_device_models_device_types1">
+      <columns>device_type_id</columns>
+      <ref-key>~.device_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="83" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="84" parent="11" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="85" parent="11" name="title_UNIQUE">
+      <columns>title</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="86" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="87" parent="11" name="title_UNIQUE">
+      <columns>title</columns>
+      <underlying-index>title_UNIQUE</underlying-index>
+    </key>
+    <column id="88" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="89" parent="12" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="90" parent="12" name="item_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="91" parent="12" name="device_model_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="92" parent="12" name="ip">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="93" parent="12" name="host">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="94" parent="12" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="95" parent="12" name="unknown">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <index id="96" parent="12" name="fk_devices_device_models1_idx">
+      <columns>device_model_id</columns>
+      <desc-columns />
+    </index>
+    <index id="97" parent="12" name="fk_devices_item_idx">
+      <columns>item_id</columns>
+      <desc-columns />
+    </index>
+    <key id="98" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="99" parent="12" name="fk_devices_items1">
+      <columns>item_id</columns>
+      <ref-key>~.items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="100" parent="12" name="fk_devices_device_models1">
+      <columns>device_model_id</columns>
+      <ref-key>~.device_models.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="101" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="102" parent="13" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="103" parent="13" name="title_UNIQUE">
+      <columns>title</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="104" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="105" parent="13" name="title_UNIQUE">
+      <columns>title</columns>
+      <underlying-index>title_UNIQUE</underlying-index>
+    </key>
+    <column id="106" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="107" parent="14" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="108" parent="14" name="device_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="109" parent="14" name="address">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="110" parent="14" name="interface_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="111" parent="14" name="mac">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="112" parent="14" name="fk_interfaces_devices1_idx">
+      <columns>device_id</columns>
+      <desc-columns />
+    </index>
+    <index id="113" parent="14" name="fk_interfaces_interface_types1_idx">
+      <columns>interface_type_id</columns>
+      <desc-columns />
+    </index>
+    <key id="114" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="115" parent="14" name="fk_interfaces_devices1">
+      <columns>device_id</columns>
+      <ref-key>~.devices.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="116" parent="14" name="fk_interfaces_interface_types1">
+      <columns>interface_type_id</columns>
+      <ref-key>~.interface_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="117" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="118" parent="15" name="number">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="119" parent="15" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="120" parent="15" name="brand_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="121" parent="15" name="model_description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="122" parent="15" name="serial_number">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="123" parent="15" name="warranty_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="124" parent="15" name="value">
+      <data-type>decimal(10)|0</data-type>
+    </column>
+    <column id="125" parent="15" name="net_value">
+      <data-type>decimal(10)|0</data-type>
+    </column>
+    <column id="126" parent="15" name="allocation">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="127" parent="15" name="number_UNIQUE">
+      <columns>number</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="128" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="129" parent="15" name="number_UNIQUE">
+      <columns>number</columns>
+      <underlying-index>number_UNIQUE</underlying-index>
+    </key>
+    <column id="130" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="131" parent="16" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="132" parent="16" name="unit">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="133" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="134" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="135" parent="17" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="136" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="137" parent="18" name="version">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="138" parent="18" name="unique_schema_migrations">
+      <columns>version</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="139" parent="18" name="unique_schema_migrations">
+      <columns>version</columns>
+      <underlying-index>unique_schema_migrations</underlying-index>
+    </key>
+    <column id="140" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="141" parent="19" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="142" parent="19" name="item_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="143" parent="19" name="device_model_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="144" parent="19" name="container_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="145" parent="19" name="quantity">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="146" parent="19" name="is_package">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="147" parent="19" name="package_quantity">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="148" parent="19" name="fk_stock_item_containers1_idx">
+      <columns>container_id</columns>
+      <desc-columns />
+    </index>
+    <index id="149" parent="19" name="fk_stock_item_device_models1_idx">
+      <columns>device_model_id</columns>
+      <desc-columns />
+    </index>
+    <index id="150" parent="19" name="fk_stock_item_items1_idx">
+      <columns>item_id</columns>
+      <desc-columns />
+    </index>
+    <key id="151" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="152" parent="19" name="fk_stock_item_items1">
+      <columns>item_id</columns>
+      <ref-key>~.items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="153" parent="19" name="fk_stock_item_device_models1">
+      <columns>device_model_id</columns>
+      <ref-key>~.device_models.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="154" parent="19" name="fk_stock_item_containers1">
+      <columns>container_id</columns>
+      <ref-key>~.containers.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="155" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="156" parent="20" name="value">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="157" parent="20" name="stock_item_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="158" parent="20" name="device_model_param_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="159" parent="20" name="fk_stock_param_value_device_model_param1_idx">
+      <columns>device_model_param_id</columns>
+      <desc-columns />
+    </index>
+    <index id="160" parent="20" name="fk_stock_param_value_stock_item1_idx">
+      <columns>stock_item_id</columns>
+      <desc-columns />
+    </index>
+    <key id="161" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="162" parent="20" name="fk_stock_param_value_stock_item1">
+      <columns>stock_item_id</columns>
+      <ref-key>~.stock_items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="163" parent="20" name="fk_stock_param_value_device_model_param1">
+      <columns>device_model_param_id</columns>
+      <ref-key>~.device_model_params.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <argument id="164" parent="21" name="module">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="165" parent="21" name="device">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="166" parent="21" name="ports">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+  </database-model>
+</dataSource>

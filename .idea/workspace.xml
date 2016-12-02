@@ -2,10 +2,365 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e0669dc-56b7-4960-aa95-e1fd93f01ff4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/.keep" afterPath="$PROJECT_DIR$/app/mailers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/.keep" afterPath="$PROJECT_DIR$/app/models/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/assets/.keep" afterPath="$PROJECT_DIR$/lib/assets/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/.keep" afterPath="$PROJECT_DIR$/lib/tasks/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/.keep" afterPath="$PROJECT_DIR$/log/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="$PROJECT_DIR$/test/controllers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="$PROJECT_DIR$/test/fixtures/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/.keep" afterPath="$PROJECT_DIR$/test/helpers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="$PROJECT_DIR$/test/integration/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="$PROJECT_DIR$/test/mailers/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/test/models/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.byebug_history" afterPath="$PROJECT_DIR$/.byebug_history" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inventario.iml" afterPath="$PROJECT_DIR$/.idea/inventario.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__inventario.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__inventario.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__inventario.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__inventario.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__inventario.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__inventario.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__inventario.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__inventario.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/connections.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/connections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/container_types.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/container_types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/containers.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/containers.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/containers.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/containers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/device_brands.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/device_brands.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/device_models.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/device_models.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/device_types.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/device_types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/devices.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/devices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/items.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/items.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/places.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/places.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/container_types.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/container_types.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/containers.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/containers.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/device_brands.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/device_brands.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/device_models.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/device_models.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/device_types.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/device_types.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/devices.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/devices.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/items.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/items.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/places.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/places.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/connections_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/connections_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/container_types_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/container_types_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/containers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/containers_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/device_brands_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/device_brands_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/device_models_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/device_models_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/device_types_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/device_types_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/devices_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/devices_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/interfaces_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/interfaces_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/places_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/places_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/connections_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/connections_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/container_type_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/container_type_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/container_types_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/container_types_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/containers_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/containers_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/device_brands_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/device_brands_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/device_models_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/device_models_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/device_types_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/device_types_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/devices_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/devices_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/interfaces_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/interfaces_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/items_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/items_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/places_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/places_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/connection.rb" afterPath="$PROJECT_DIR$/app/models/connection.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/container.rb" afterPath="$PROJECT_DIR$/app/models/container.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/container_slot.rb" afterPath="$PROJECT_DIR$/app/models/container_slot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/container_type.rb" afterPath="$PROJECT_DIR$/app/models/container_type.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/device.rb" afterPath="$PROJECT_DIR$/app/models/device.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/device_brand.rb" afterPath="$PROJECT_DIR$/app/models/device_brand.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/device_model.rb" afterPath="$PROJECT_DIR$/app/models/device_model.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/device_type.rb" afterPath="$PROJECT_DIR$/app/models/device_type.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/interface.rb" afterPath="$PROJECT_DIR$/app/models/interface.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/interface_type.rb" afterPath="$PROJECT_DIR$/app/models/interface_type.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/item.rb" afterPath="$PROJECT_DIR$/app/models/item.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/place.rb" afterPath="$PROJECT_DIR$/app/models/place.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/connections/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/connections/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/connections/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/connections/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/connections/new.html.erb" afterPath="$PROJECT_DIR$/app/views/connections/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/container_types/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/container_types/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/container_types/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/container_types/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/container_types/index.html.erb" afterPath="$PROJECT_DIR$/app/views/container_types/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/container_types/new.html.erb" afterPath="$PROJECT_DIR$/app/views/container_types/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/container_types/show.html.erb" afterPath="$PROJECT_DIR$/app/views/container_types/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/brief.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/brief.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/containers/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/containers/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/containers/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/containers/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/device_brands/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/device_brands/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/index.html.erb" afterPath="$PROJECT_DIR$/app/views/device_brands/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_brands/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/new.html.erb" afterPath="$PROJECT_DIR$/app/views/device_brands/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/show.html.erb" afterPath="$PROJECT_DIR$/app/views/device_brands/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_brands/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_brands/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/device_models/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/device_models/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/index.html.erb" afterPath="$PROJECT_DIR$/app/views/device_models/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_models/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/new.html.erb" afterPath="$PROJECT_DIR$/app/views/device_models/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/show.html.erb" afterPath="$PROJECT_DIR$/app/views/device_models/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_models/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_models/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/device_types/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/device_types/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/index.html.erb" afterPath="$PROJECT_DIR$/app/views/device_types/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_types/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/new.html.erb" afterPath="$PROJECT_DIR$/app/views/device_types/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/show.html.erb" afterPath="$PROJECT_DIR$/app/views/device_types/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/device_types/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/device_types/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/_searchbar.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/_searchbar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/index.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/devices/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/show.html.erb" afterPath="$PROJECT_DIR$/app/views/devices/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devices/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/devices/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/interfaces/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/interfaces/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/index.html.erb" afterPath="$PROJECT_DIR$/app/views/interfaces/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/interfaces/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/new.html.erb" afterPath="$PROJECT_DIR$/app/views/interfaces/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/show.html.erb" afterPath="$PROJECT_DIR$/app/views/interfaces/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/interfaces/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/interfaces/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/items/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/index.html.erb" afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/items/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/new.html.erb" afterPath="$PROJECT_DIR$/app/views/items/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/show.html.erb" afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/items/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_first_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_first_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_gap.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_gap.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_last_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_last_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" afterPath="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/bootstrap.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/places/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/places/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/index.html.erb" afterPath="$PROJECT_DIR$/app/views/places/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/places/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/new.html.erb" afterPath="$PROJECT_DIR$/app/views/places/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/show.html.erb" afterPath="$PROJECT_DIR$/app/views/places/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/places/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_searchbar.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_searchbar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/constants.rb" afterPath="$PROJECT_DIR$/config/initializers/constants.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/secrets.yml" afterPath="$PROJECT_DIR$/config/secrets.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160114180551_add_reverse_to_containers.rb" afterPath="$PROJECT_DIR$/db/migrate/20160114180551_add_reverse_to_containers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160114183823_add_fiber_interfaces_to_device_models.rb" afterPath="$PROJECT_DIR$/db/migrate/20160114183823_add_fiber_interfaces_to_device_models.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160114194817_add_ip_to_devices.rb" afterPath="$PROJECT_DIR$/db/migrate/20160114194817_add_ip_to_devices.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160201181135_add_planilia_to_items.rb" afterPath="$PROJECT_DIR$/db/migrate/20160201181135_add_planilia_to_items.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160201194831_change_column_name.rb" afterPath="$PROJECT_DIR$/db/migrate/20160201194831_change_column_name.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160202154949_add_allocation_to_item.rb" afterPath="$PROJECT_DIR$/db/migrate/20160202154949_add_allocation_to_item.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160202184339_add_device_to_container_slots.rb" afterPath="$PROJECT_DIR$/db/migrate/20160202184339_add_device_to_container_slots.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160222172053_add_unknown_to_devices.rb" afterPath="$PROJECT_DIR$/db/migrate/20160222172053_add_unknown_to_devices.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20160224183028_change_column_null_devices_item_id.rb" afterPath="$PROJECT_DIR$/db/migrate/20160224183028_change_column_null_devices_item_id.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/a.rb" afterPath="$PROJECT_DIR$/lib/a.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ab.rb" afterPath="$PROJECT_DIR$/lib/ab.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/install_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/install_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/application.css" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/application.js" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap.coffee" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap.js" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap_and_overrides.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap_and_overrides.less" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/bootstrap_and_overrides.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/en.bootstrap.yml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/install/templates/en.bootstrap.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/layout/layout_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/layout/layout_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/layout/templates/layout.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/partial/partial_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/partial/partial_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/partial/templates/_login.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/partial/templates/_login.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/_form.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/edit.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/new.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/show.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.erb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.haml" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.slim" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/simple_form/_form.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/bootstrap/themed/themed_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/bootstrap/themed/themed_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh.rb" afterPath="$PROJECT_DIR$/lib/net/ssh.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/agent.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/agent.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/agent/java_pageant.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/agent/java_pageant.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/agent/socket.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/agent/socket.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/constants.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/constants.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/key_manager.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/key_manager.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/abstract.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/abstract.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/hostbased.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/hostbased.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/keyboard_interactive.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/keyboard_interactive.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/none.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/none.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/password.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/password.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/publickey.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/methods/publickey.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/pageant.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/pageant.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/authentication/session.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/authentication/session.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/buffer.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/buffer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/buffered_io.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/buffered_io.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/config.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/connection/channel.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/connection/channel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/connection/constants.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/connection/constants.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/connection/keepalive.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/connection/keepalive.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/connection/session.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/connection/session.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/connection/term.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/connection/term.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/errors.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/errors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/key_factory.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/key_factory.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/known_hosts.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/known_hosts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/loggable.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/loggable.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/packet.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/packet.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/prompt.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/prompt.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/proxy/command.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/proxy/command.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/proxy/errors.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/proxy/errors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/proxy/http.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/proxy/http.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/proxy/socks4.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/proxy/socks4.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/proxy/socks5.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/proxy/socks5.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/ruby_compat.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/ruby_compat.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/service/forward.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/service/forward.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/channel.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/channel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/extensions.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/extensions.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/kex.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/kex.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/local_packet.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/local_packet.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/packet.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/packet.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/remote_packet.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/remote_packet.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/script.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/script.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/test/socket.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/test/socket.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/algorithms.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/algorithms.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/cipher_factory.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/cipher_factory.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/constants.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/constants.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/ctr.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/ctr.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/abstract.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/abstract.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/md5.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/md5.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/md5_96.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/md5_96.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/none.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/none.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/ripemd160.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/ripemd160.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha1.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha1_96.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha1_96.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_256.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_256.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_256_96.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_256_96.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_512.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_512.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_512_96.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/hmac/sha2_512_96.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/identity_cipher.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/identity_cipher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group14_sha1.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group14_sha1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group1_sha1.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group1_sha1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group_exchange_sha1.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group_exchange_sha1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group_exchange_sha256.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/diffie_hellman_group_exchange_sha256.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp256.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp256.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp384.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp384.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp521.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/kex/ecdh_sha2_nistp521.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/key_expander.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/key_expander.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/openssl.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/openssl.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/packet_stream.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/packet_stream.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/server_version.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/server_version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/session.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/session.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/transport/state.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/transport/state.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/verifiers/lenient.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/verifiers/lenient.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/verifiers/null.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/verifiers/null.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/verifiers/secure.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/verifiers/secure.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/verifiers/strict.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/verifiers/strict.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/net/ssh/version.rb" afterPath="$PROJECT_DIR$/lib/net/ssh/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/core.rake" afterPath="$PROJECT_DIR$/lib/tasks/core.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/connections_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/connections_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/container_type_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/container_type_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/container_types_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/container_types_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/containers_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/containers_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/device_brands_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/device_brands_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/device_models_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/device_models_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/device_types_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/device_types_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/devices_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/devices_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/interfaces_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/interfaces_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/items_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/items_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/places_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/places_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/connections.yml" afterPath="$PROJECT_DIR$/test/fixtures/connections.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/container_slots.yml" afterPath="$PROJECT_DIR$/test/fixtures/container_slots.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/container_types.yml" afterPath="$PROJECT_DIR$/test/fixtures/container_types.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/containers.yml" afterPath="$PROJECT_DIR$/test/fixtures/containers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/device_brands.yml" afterPath="$PROJECT_DIR$/test/fixtures/device_brands.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/device_models.yml" afterPath="$PROJECT_DIR$/test/fixtures/device_models.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/device_types.yml" afterPath="$PROJECT_DIR$/test/fixtures/device_types.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/devices.yml" afterPath="$PROJECT_DIR$/test/fixtures/devices.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/interface_types.yml" afterPath="$PROJECT_DIR$/test/fixtures/interface_types.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/interfaces.yml" afterPath="$PROJECT_DIR$/test/fixtures/interfaces.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/interfaces_types.yml" afterPath="$PROJECT_DIR$/test/fixtures/interfaces_types.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/items.yml" afterPath="$PROJECT_DIR$/test/fixtures/items.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/places.yml" afterPath="$PROJECT_DIR$/test/fixtures/places.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/connection_test.rb" afterPath="$PROJECT_DIR$/test/models/connection_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/container_slot_test.rb" afterPath="$PROJECT_DIR$/test/models/container_slot_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/container_test.rb" afterPath="$PROJECT_DIR$/test/models/container_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/container_type_test.rb" afterPath="$PROJECT_DIR$/test/models/container_type_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/device_brand_test.rb" afterPath="$PROJECT_DIR$/test/models/device_brand_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/device_model_test.rb" afterPath="$PROJECT_DIR$/test/models/device_model_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/device_test.rb" afterPath="$PROJECT_DIR$/test/models/device_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/device_type_test.rb" afterPath="$PROJECT_DIR$/test/models/device_type_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/interface_test.rb" afterPath="$PROJECT_DIR$/test/models/interface_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/interface_type_test.rb" afterPath="$PROJECT_DIR$/test/models/interface_type_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/item_test.rb" afterPath="$PROJECT_DIR$/test/models/item_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/place_test.rb" afterPath="$PROJECT_DIR$/test/models/place_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
     </list>
     <ignored path="inventario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +388,28 @@
     <favorites_list name="inventario" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="assets.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,7 +426,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/items/_searchbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_searchbar.html.erb" />
         <option value="$PROJECT_DIR$/lib/generators/bootstrap/themed/templates/index.html.erb" />
@@ -99,8 +474,9 @@
         <option value="$PROJECT_DIR$/lib/net/ssh/transport/packet_stream.rb" />
         <option value="$PROJECT_DIR$/lib/ab.rb" />
         <option value="$PROJECT_DIR$/lib/a.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/tasks/core.rake" />
+        <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -111,7 +487,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1279" />
+    <option name="x" value="-1" />
     <option name="width" value="1442" />
     <option name="height" value="875" />
   </component>
@@ -141,8 +517,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,20 +534,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,6 +561,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="939" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -458,7 +822,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1450200549541</updated>
-      <workItem from="1468437732896" duration="8693000" />
+      <workItem from="1468437732896" duration="9692000" />
+      <workItem from="1480701248621" duration="141000" />
+      <workItem from="1480703770896" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="incluir campo reverse no container">
       <created>1452796548083</created>
@@ -597,30 +963,30 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8693000" />
+    <option name="totallyTimeSpent" value="9939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1279" y="0" width="1442" height="875" extended-state="6" />
+    <frame x="-1" y="0" width="1442" height="875" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36226687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36180556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858992" sideWeight="0.50860834" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.49713057" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32858992" sideWeight="0.4913917" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.4913917" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998747" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -659,13 +1025,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/interface.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="114" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/containers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,20 +1053,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bootstrap_form-2.3.0/lib/bootstrap_form/helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/helpers/form_options_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="349" column="10" selection-start-line="349" selection-start-column="10" selection-end-line="349" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bootstrap_form-2.3.0/lib/bootstrap_form/helper.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/helpers/form_options_helper.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/devices/_searchbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -722,20 +1069,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.5/lib/active_model/errors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.5/lib/active_model/validations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.5/lib/active_model/errors.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/activemodel-4.2.5/lib/active_model/validations.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20160201194831_change_column_name.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,13 +1197,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/2.2.0/mutex_m.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/2.2.0/mutex_m.rb" />
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs22/builtin.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -876,41 +1205,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="229" column="38" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/transport/session.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="171" column="21" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/connection/session.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="296" column="8" selection-start-line="296" selection-start-column="8" selection-end-line="296" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/connection/channel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="402" column="6" selection-start-line="402" selection-start-column="6" selection-end-line="402" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/buffered_io.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/transport/session.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/connection/session.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/connection/channel.rb" />
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/buffered_io.rb" />
     <entry file="file://$PROJECT_DIR$/lib/net/ssh/test/kex.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -918,13 +1217,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/transport/packet_stream.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="89" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/net-ssh-3.0.2/lib/net/ssh/transport/packet_stream.rb" />
     <entry file="file://$PROJECT_DIR$/lib/net/ssh/transport/packet_stream.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -960,13 +1253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/2.2.0/net/telnet.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="272" column="8" selection-start-line="272" selection-start-column="8" selection-end-line="272" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.2.3/lib/ruby/2.2.0/net/telnet.rb" />
     <entry file="file://$PROJECT_DIR$/lib/net/ssh/connection/session.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -978,7 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
           <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="919" column="14" selection-start-line="919" selection-start-column="14" selection-end-line="919" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,15 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,6 +1293,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>

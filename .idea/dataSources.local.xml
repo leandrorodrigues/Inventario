@@ -2,16 +2,27 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails inventario: test" uuid="df290534-cdb3-4139-ab63-c889289599cf">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <user-name>inventario</user-name>
       <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
     </data-source>
     <data-source name="Rails inventario: development" uuid="4e6b3652-3cef-4c1c-bf97-f017f2ddc679">
+      <database-info product="MySQL" version="5.5.49-0+deb8u1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <user-name>inventario</user-name>
       <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
       <introspection-scope>inventario:*</introspection-scope>
       <resolve-scope>inventario:*</resolve-scope>
     </data-source>
     <data-source name="Rails inventario: production" uuid="af817eaf-1fbe-441a-b72c-d2228b3e2400">
+      <database-info product="MySQL" version="5.5.49-0+deb8u1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <user-name>inventario</user-name>
       <user-password>dfc3dfc4dfdcdf9bdf9fdfea</user-password>
     </data-source>
