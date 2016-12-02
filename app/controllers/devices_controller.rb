@@ -1,5 +1,5 @@
 class DevicesController < ApplicationController
-  before_action :set_device, only: [:show, :edit, :update, :destroy, :discover_ip, teste]
+  before_action :set_device, only: [:show, :edit, :update, :destroy, :discover_ip]
 
   # GET /devices
   # GET /devices.json
