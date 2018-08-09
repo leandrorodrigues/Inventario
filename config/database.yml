@@ -14,9 +14,13 @@ default: &default
   encoding: utf8
   pool: 5
   username: inventario
-  host: 10.15.199.229
+  database: inventario
+  host: 127.0.0.1
   password: inv15@
  # socket: /var/run/mysqld/mysqld.sock
+
+production:
+  <<: *default
 
 development:
   <<: *default
@@ -46,9 +50,4 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
-production:
-  <<: *default
-  database: inventario_production
-  username: inventario
+#     url: <%= ENV['DATABASE_URL'] %
